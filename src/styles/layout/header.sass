@@ -19,7 +19,6 @@ header
 					z-index: 1
 				span
 					background: #D0D6F9
-					// width: 24px
 		.navbar-menu
 			background: none
 			display: block
@@ -50,5 +49,85 @@ header
 				font-size: 16px
 				text-transform: uppercase
 				color: #ffffff
+				position: relative
+				letter-spacing: 2px
+				&::before
+					content: ""
+					position: absolute
+					top: 0
+					right: 0
+					width: 3px
+					height: 0px
+					background: #ffffff
+				&.is-active, &:focus, &:active
+					background: none
+					&::before
+						height: 100%
 				b
 					margin-right: 12px
+
+// header  tablet
+@media only screen and (min-width: 700px)
+	header
+		.navbar
+			display: flex
+			.navbar-brand
+				padding: 24px 40px
+				.navbar-burger
+					display: none
+			.navbar-menu
+				position: relative
+				height: auto
+				width: inherit
+				transform: none
+				padding: 0
+				display: flex
+				flex-grow: 1
+				flex-shrink: 0
+				transition: none
+				margin-left: auto
+				padding: 0 40px 0 0
+				.navbar-end
+					display: flex
+					align-items: stretch
+					justify-content: flex-end
+					margin-inline-start: auto
+					&::before
+						height: 100%
+				.navbar-item
+					margin: 0 48px 0 0
+					padding: 0
+					align-items: center
+					display: flex
+					&:last-child
+						margin: 0
+					&::before
+						width: 100%
+						height: 3px
+						top: inherit
+						right: inherit
+						left: 0
+						bottom: 0
+						transition: all 0.3s ease-out
+						opacity: 0
+					&.is-active, &:focus, &:active
+						background: none
+						&::before
+							opacity: 100%
+					&:hover
+						background: none
+						&::before
+							opacity: 50%
+					b
+						margin: 0
+
+@media only screen and (min-width: 1024px)
+	header
+		.navbar
+			display: flex
+			padding: 40px 0 0
+			.navbar-brand
+				padding: 24px 64px
+			.navbar-menu
+				max-width: 763px
+				padding: 0 64px 0 159px
