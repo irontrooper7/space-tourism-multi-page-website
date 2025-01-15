@@ -1,0 +1,27 @@
+.destination
+	background: url('/destination/background-destination-mobile.jpg') no-repeat
+	background-size: cover
+	h5
+		color: white
+		text-align: center
+		span
+			margin-right: 24px
+			opacity: 25%
+			font-weight: 700
+
+@media only screen and (min-width: 768px)
+	.destination
+		background: url('/destination/background-destination-tablet.jpg') no-repeat
+		background-size: cover
+		&.is-fullheight
+			.hero-body
+				padding: calc( 40px + 88px ) 1.5rem 1.5rem
+		h5
+			text-align: left
+
+@media only screen and (min-width: 1024px)
+	.destination
+		background: url('/destination/background-destination-desktop.jpg') no-repeat
+		background-size: cover
+		h5
+			margin-left: 96px

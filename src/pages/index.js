@@ -2,7 +2,9 @@ import Layout from "../../components/Layout";
 
 export default function Home() {
 	return (
-		<Layout>
+		<Layout
+			title={'Home'}
+		>
 			<section className="home hero is-fullheight">
 				<div className="hero-body">
 					<div className="container">
