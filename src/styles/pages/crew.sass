@@ -1,0 +1,89 @@
+.crew
+	background: url('/crew/background-crew-mobile.jpg') no-repeat
+	background-size: cover
+	&.is-fullheight
+		.hero-body
+			padding: 112px 1.5rem 3rem
+	h5
+		text-align: center
+		color: #ffffff
+		margin-bottom: 24px
+		span
+			opacity: 25%
+			margin-right: 24px
+	.slide-cont
+		text-align: center
+		.cont-info
+			padding: 0 0 74px
+		h4
+			opacity: 50%
+		h3
+			margin-bottom: 24px
+		img
+			object-fit: contain
+			margin: 56px auto 0px
+			max-height: 340px
+			max-width: 370px
+			width: 100%
+	.swiper
+		.swiper-pagination
+			top: 228px
+			bottom: inherit
+			.swiper-pagination-bullet
+				width: 10px
+				height: 10px
+				background: #ffffff
+				opacity: 17.44%
+				&.swiper-pagination-bullet-active
+					opacity: 100%
+
+@media only screen and (min-width: 768px)
+	.crew
+		background: url('/crew/background-crew-tablet.jpg') no-repeat
+		background-size: cover
+		&.is-fullheight
+			.hero-body
+				padding: 120px 1.5rem 0rem
+		h5
+			text-align: left
+		.slide-cont
+			.cont-info
+				max-width: 512px
+				margin: auto
+				padding: 40 0 34px
+			img
+				max-width: 446px
+				max-height: 560px
+				margin: auto
+
+@media only screen and (min-width: 1024px)
+	.crew
+		background: url('/crew/background-crew-desktop.jpg') no-repeat
+		background-size: cover
+		&.is-fullheight
+			.hero-body
+				padding: 128px 1.5rem 0rem
+		.slider
+			padding: 29px 0px
+		.slide-cont
+			text-align: left
+			.columns
+				align-items: center
+			.cont-info
+				max-width: 539px
+				margin: inherit
+				padding: 0
+			img
+				max-width: 539px
+				max-height: 676px
+				margin: auto
+		.swiper
+			.swiper-pagination
+				bottom: 48px
+				top: inherit
+				width: auto
+				.swiper-pagination-bullet
+					width: 15px
+					height: 15px
+					&::hover
+						opacity: 50%
