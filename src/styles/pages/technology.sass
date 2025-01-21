@@ -1,0 +1,103 @@
+.technology
+	background: url('/technology/background-technology-mobile.jpg') no-repeat
+	background-size: cover
+	&.is-fullheight
+		.hero-body
+			padding: 88px 0px 3rem
+			align-items: flex-start
+	h5
+		text-align: center
+		color: #ffffff
+		margin: 24px 0px 88px
+		span
+			opacity: 25%
+			margin-right: 24px
+	picture
+		display: block
+		margin: 0 0 32px
+		img
+			width: 100%
+			object-fit: cover
+	.tabs
+		margin: 0 0 40px 0
+		ul
+			justify-content: center
+			li
+				margin: 0 16px 0 0
+				&:last-child
+					margin: 0
+				&.is-active
+					h4
+						background: #ffffff
+						border: 1px solid rgba(255, 255, 255, 1)
+						color: #0B0D17
+				h4
+					border: 1px solid rgba(255, 255, 255, 0.25)
+					border-radius: 50px
+					color: #ffffff
+					height: 40px
+					text-align: center
+					line-height: 40px
+					vertical-align: middle
+					width: 40px
+	.tabs-content
+		padding: 0px 24px
+		text-align: center
+		display: none
+		&.is-active
+			display: block
+		h4, h3
+			margin: 0 0 16px
+		h4
+			opacity: 50%
+
+@media only screen and (min-width: 768px)
+	.technology
+		background: url('/technology/background-technology-tablet.jpg') no-repeat
+		background-size: cover
+		h5
+			text-align: left
+			margin: 24px 40px 88px
+		.tabs-content
+			max-width: 512px
+			margin: 0 auto
+			.tabs
+				ul
+					li
+						h4
+							height: 56px
+							line-height: 56px
+							width: 56px
+
+@media only screen and (min-width: 1024px)
+	.technology
+		background: url('/technology/background-technology-desktop.jpg') no-repeat
+		background-size: cover
+		picture
+			img
+				max-width: 608px
+		.tabs-container
+			.tabs-content
+				text-align: left
+				max-width: inherit
+				margin: 0
+				padding: 0 0 0 64px
+				width: calc(100% - 80px)
+				vertical-align: top
+				&.is-active
+					display: inline-block
+			.tabs
+				display: inline-block
+				ul
+					display: block
+					li
+						margin: 0 0 32px 0
+						cursor: pointer
+						&:hover
+							h4
+								border: 1px solid rgba(255, 255, 255, 1)
+						h4
+							height: 80px
+							line-height: 80px
+							width: 80px
+							transition: all 0.3s
