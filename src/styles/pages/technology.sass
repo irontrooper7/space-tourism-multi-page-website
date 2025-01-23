@@ -12,12 +12,11 @@
 		span
 			opacity: 25%
 			margin-right: 24px
-	picture
+	img
 		display: block
+		width: 100%
 		margin: 0 0 32px
-		img
-			width: 100%
-			object-fit: cover
+		object-fit: cover
 	.tabs
 		margin: 0 0 40px 0
 		ul
@@ -57,7 +56,7 @@
 		background-size: cover
 		h5
 			text-align: left
-			margin: 24px 40px 88px
+			margin: 24px 40px
 		.tabs-content
 			max-width: 512px
 			margin: 0 auto
@@ -73,9 +72,16 @@
 	.technology
 		background: url('/technology/background-technology-desktop.jpg') no-repeat
 		background-size: cover
-		picture
-			img
-				max-width: 608px
+		&.is-fullheight
+			.hero-body
+				padding: 128px 0px 0rem
+		.columns
+			padding: 67px 0px
+			.column
+				padding: 0px 0.74rem
+		img
+			max-width: 608px
+			margin: 0 auto
 		.tabs-container
 			.tabs-content
 				text-align: left

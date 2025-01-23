@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useRouter } from "next/router";
+import Link from 'next/link';
 
 export default function Header() {
 	const route = useRouter()
@@ -27,10 +28,10 @@ export default function Header() {
 				</div>
 				<div id="navbarBasicExample" className={`navbar-menu ${menuStatus ? 'is-active' : ''}`}>
 					<div className="navbar-end">
-						<a className={`navbar-item ${ route.asPath === '/' ? 'is-active' : '' }`} href="/"><b>00</b>Home</a>
-						<a className={`navbar-item ${ route.asPath === '/destination' ? 'is-active' : '' }`} href="/destination"><b>01</b>destination</a>
-						<a className={`navbar-item ${ route.asPath === '/crew' ? 'is-active' : '' }`} href="/crew"><b>02</b>crew</a>
-						<a className={`navbar-item ${ route.asPath === '/technology' ? 'is-active' : '' }`} href="/technology"><b>03</b>technology</a>
+						<Link className={`navbar-item ${ route.asPath === '/' ? 'is-active' : '' }`} href="/"><b>00</b> Home</Link>
+						<Link className={`navbar-item ${ route.asPath === '/destination' ? 'is-active' : '' }`} href="/destination"><b>01</b>destination</Link>
+						<Link className={`navbar-item ${ route.asPath === '/crew' ? 'is-active' : '' }`} href="/crew"><b>02</b>crew</Link>
+						<Link className={`navbar-item ${ route.asPath === '/technology' ? 'is-active' : '' }`} href="/technology"><b>03</b>technology</Link>
 					</div>
 				</div>
 			</nav>

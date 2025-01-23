@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../../components/Layout";
 
 export default function Home() {
@@ -17,7 +18,9 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="column">
-								<button className="button">Explore</button>
+								<Link href={'/destination'}>
+									<button className="button">Explore</button>
+								</Link>
 							</div>
 						</div>
 					</div>

@@ -1,6 +1,6 @@
 import Layout from "../../../components/Layout";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, EffectFade } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 const data = [
 	{
@@ -44,7 +44,11 @@ export default function Crew() {
 								slidesPerView={1}
 								effect={'fade'}
 								fadeEffect={{crossFade: true}}
-								modules={[Pagination, EffectFade]}
+								modules={[Autoplay, EffectFade, Pagination]}
+								autoplay={{
+									delay: 5000,
+									disableOnInteraction: true,
+								}}
 								pagination={{
 									clickable: true,
 								}}
